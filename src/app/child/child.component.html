@@ -1,13 +1,13 @@
 <div class="child-comp">
-  <input type="text" class="form-control">
-  <button type="button" class="btn btn-info">Send textbox to parent</button>
+  <input [(ngModel)]="childTextBoxValue" type="text" class="form-control">
+  <button (click)="passTextValueToParent()" type="button" class="btn btn-info">Send textbox to parent</button>
 
   <div class="txt">
-    Value of parent textbox : 
+    Value of parent textbox : {{parentTextBoxValue}}
   </div>
 
   <div class="txt">
-    Parent click count:
+    Parent click count: {{clickCount}}
   </div>
 
 </div>

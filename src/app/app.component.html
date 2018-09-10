@@ -4,15 +4,17 @@
   <div class="controls">
     <h3>My Parent Component</h3>
     <div></div>
-    <input type="text" class="form-control">
-    <button type="button" class="btn btn-primary">Parent Click</button>
+    <input [(ngModel)]="parentTxtValue" type="text" class="form-control">
+    <button (click)="onParentButtonClick()" type="button" class="btn btn-primary">Parent Click</button>
 
     <div class="txt">
-      Value of child text box :
+      Value of child text box : {{childTextBoxValue}}
     </div>
   </div>
   <div class="child">
     <h3>My Child Component</h3>
-    <app-child></app-child>
+    <app-child [parentText]="parentTxtValue" [parentClick]="parentClick"
+    (ontextFromChild)="updateInChildValue($event)"
+    ></app-child>
   </div>
 </div>
