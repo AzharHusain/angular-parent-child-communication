@@ -2,6 +2,12 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.2.
 
+## Tutorial
+
+This tutorial describe data communication between parent and child transfer in Angular 2+. We will deal how to transfer data and events from parent to child and vice-versa.
+
+We will see the use of Input and Output decorators to facilitate the communication.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
