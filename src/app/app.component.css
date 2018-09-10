@@ -1,0 +1,28 @@
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.controls {
+    width: 640px;
+    border: 1px solid #ccc;
+    margin-top : 20px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 2fr  1fr;
+    grid-gap: 10px 10px;
+    padding: 20px;
+}
+
+.child {
+    border: 1px solid #ccc;
+    width: 640px;
+    margin-top: 20px;
+    padding: 20px;
+}
+.txt {
+    font-size: 0.8rem;
+}
